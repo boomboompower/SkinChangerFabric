@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "skinchangermod",
+  "version": "${version}",
+  "name": "SkinChanger",
+  "description": "A test mod",
+  "authors": [
+    "boomboompower"
+  ],
+  "contact": {
+    "website": "boomy.wtf"
+  },
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "wtf.boomy.skinchanger.client.SkinChangerClient"
+    ],
+    "main": [
+      "wtf.boomy.skinchanger.SkinChangerServer"
+    ],
+    "cotton-client-commands": ["wtf.boomy.skinchanger.client.commands.SkinChangerClientCommand"]
+  },
+  "mixins": [
+    "skinchanger.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.9.2+build.206",
+    "fabric": "*",
+    "minecraft": "1.16.2",
+    "cotton-client-commands": "^1.0.0"
+  }
+}

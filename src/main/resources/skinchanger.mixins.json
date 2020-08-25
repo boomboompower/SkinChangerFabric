@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "wtf.boomy.skinchanger.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "MixinPlayerListEntry"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
