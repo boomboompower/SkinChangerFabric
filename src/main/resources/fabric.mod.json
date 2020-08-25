@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "skinchangermod",
+  "id": "skinchangerfabric",
   "version": "${version}",
-  "name": "SkinChanger",
-  "description": "A test mod",
+  "name": "SkinChangerFabric",
+  "description": "A lightweight version of the SkinChanger mod, built for Fabric",
   "authors": [
     "boomboompower"
   ],
   "contact": {
     "website": "boomy.wtf"
   },
-  "license": "All-Rights-Reserved",
+  "license": "LICENSE.md",
   "environment": "*",
   "entrypoints": {
     "client": [
@@ -19,7 +19,9 @@
     "main": [
       "wtf.boomy.skinchanger.SkinChangerServer"
     ],
-    "cotton-client-commands": ["wtf.boomy.skinchanger.client.commands.SkinChangerClientCommand"]
+    "cotton-client-commands": [
+      "wtf.boomy.skinchanger.client.commands.SkinChangerClientCommand"
+    ]
   },
   "mixins": [
     "skinchanger.mixins.json"
